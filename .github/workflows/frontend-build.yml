@@ -32,16 +32,16 @@ jobs:
       - name: 📊 Generate Summary
         id: summary
         run: |
-          echo "## 🎨 Frontend Build Summary" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "✅ **Status:** Build completed successfully" >> $GITHUB_STEP_SUMMARY
+          echo "## 🎨 Frontend Build Summary"                      >> $GITHUB_STEP_SUMMARY
+          echo ""                                                  >> $GITHUB_STEP_SUMMARY
+          echo "✅ **Status:** Build completed successfully"       >> $GITHUB_STEP_SUMMARY
           echo "📦 **Output:** Static assets ready for deployment" >> $GITHUB_STEP_SUMMARY
-          echo "⚡ **Duration:** ~2 seconds" >> $GITHUB_STEP_SUMMARY
+          echo "⚡ **Duration:** ~2 seconds"                       >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### 📋 Build Steps" >> $GITHUB_STEP_SUMMARY
-          echo "- ✅ HTML templates processed" >> $GITHUB_STEP_SUMMARY
-          echo "- ✅ CSS styles compiled" >> $GITHUB_STEP_SUMMARY
-          echo "- ✅ JavaScript bundled" >> $GITHUB_STEP_SUMMARY
-          echo "- ✅ Assets optimized" >> $GITHUB_STEP_SUMMARY
+          echo "### 📋 Build Steps"                                >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ HTML templates processed"                     >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ CSS styles compiled"                          >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ JavaScript bundled"                           >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Assets optimized"                             >> $GITHUB_STEP_SUMMARY
           
-          echo "status=success" >> $GITHUB_OUTPUT
+          echo "status=success"                                    >> $GITHUB_OUTPUT
