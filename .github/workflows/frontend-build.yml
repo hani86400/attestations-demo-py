@@ -16,19 +16,7 @@ jobs:
       status: ${{ steps.summary.outputs.status }}
     
     steps:
-      - name: 📥 Checkout repository
-        uses: actions/checkout@v4
-        
-      - name: 🎨 Frontend Build
-        run: |
-          echo "🎨 Building frontend components..."
-          echo "   ✅ HTML templates processed"
-          echo "   ✅ CSS styles compiled"  
-          echo "   ✅ JavaScript bundled"
-          echo "   ✅ Assets optimized"
-          sleep 2
-          echo "🎉 Frontend build completed!"
-          
+
       - name: 📊 Generate Summary
         id: summary
         run: |
@@ -37,7 +25,7 @@ jobs:
           echo "✅ **Status:** Build completed successfully"       >> $GITHUB_STEP_SUMMARY
           echo "📦 **Output:** Static assets ready for deployment" >> $GITHUB_STEP_SUMMARY
           echo "⚡ **Duration:** ~2 seconds"                       >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
+          echo ""                                                  >> $GITHUB_STEP_SUMMARY
           echo "### 📋 Build Steps"                                >> $GITHUB_STEP_SUMMARY
           echo "- ✅ HTML templates processed"                     >> $GITHUB_STEP_SUMMARY
           echo "- ✅ CSS styles compiled"                          >> $GITHUB_STEP_SUMMARY
